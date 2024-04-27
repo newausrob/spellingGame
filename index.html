@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spelling Guessing Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
+  <audio id="correctSound" src="correct.wav"></audio>
+  <audio id="incorrectSound" src="incorrect.wav"></audio>
+
+  <div id="container">
+    <h1>Spelling Guessing Game</h1>
+    <button id="startBtn">Start Game</button>
+    <div id="wordDisplay"></div>
+    <input type="text" id="userInput" placeholder="Enter your guess">
+    <button id="submitBtn" disabled>Submit</button>
+    <div id="result"></div>
+    <div id="correctDisplay"></div> <!-- Add this div for displaying correct spelling -->
+    <div id="playerElo"></div> <!-- Add this div for displaying player's Elo rating -->
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
